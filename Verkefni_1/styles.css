@@ -2,34 +2,52 @@
 {
     height: 500px;
     width: 500px;
+    border: black solid;
 
     background-image: url("/Verkefni_1/skypic.jfif");
-    background-size: cover;
-
-    border: black solid;
-    background-color: white;
+    background-repeat:no-repeat;
+    background-size:cover;
 
     text-align: center;
     overflow: hidden;
 
-    animation: movebackground;
+    animation: movebackground 5s ease-out;
+}
+
+.link
+{
+    color: black;
+    text-decoration: none;
 }
 
 .textUp
 {
-    animation: slidetoright 4s;
+    padding-top: 50px;
+    font-size: 48px;
+    font-family: Roboto, sans-serif;
+    animation: down 2s ease-out;
+    padding-bottom: 100px;
 }
 
-@keyframes slidetoright
+.textDown
+{
+    
+    font-size: 64px;
+    font-family: Roboto, sans-serif;
+    animation: up 4s;
+}
+
+@keyframes down
 {
     0%{transform: translatey(-250px);}
     100%{transform: translatey(0px);}
 }
 
-@keyframes fadein
+@keyframes up
 {
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+    0%{transform:translateY(250px)}
+    50%{transform:translatey(250px)}
+    100%{transform:translateY(0)}
 }
 
 @keyframes movebackground
