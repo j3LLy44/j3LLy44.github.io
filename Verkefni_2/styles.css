@@ -1,0 +1,54 @@
+.Ball
+{
+    fill: #CC2954;
+    stroke: #CC2954;
+    stroke-width: 0.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+    animation: EyeBall 10s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+.Line
+{
+    transform-origin: 50% 50%;
+    animation: EyeLine 2.5s ease-in-out infinite;
+    fill: black;
+    stroke-width: 0.5px;
+}
+
+@keyframes EyeLine{
+    0%{
+        transform: scale(1);
+        fill: black;
+        height: 100%;
+    }
+    50%{
+        transform: scale(0.8);
+        fill: #9e1f41;
+        height: 80%;
+    }
+    0%{
+        transform: scale(1);
+        fill: black;
+        height: 100%;
+    }
+}
+@keyframes EyeBall{
+    0%{
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+        stroke-width: 0.5;
+    }
+    50%{
+        stroke-dashoffset: 10;
+        stroke-dasharray: 10;
+        stroke-width: 1;
+    }
+    100%{
+        stroke-dashoffset: 0;
+        stroke-dasharray: 100;
+        stroke-width: 0.5;
+    }
+}
