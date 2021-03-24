@@ -12,6 +12,7 @@
 }
 .Line
 {
+    padding-top: 50px;
     transform-origin: 50% 50%;
     animation: EyeLine 2.5s ease-in-out infinite;
     fill: black;
@@ -48,7 +49,7 @@
     }
     100%{
         stroke-dashoffset: 0;
-        stroke-dasharray: 100;
+        stroke-dasharray: 0;
         stroke-width: 0.5;
     }
 }
