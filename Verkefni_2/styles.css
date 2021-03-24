@@ -1,6 +1,6 @@
 .Ball
 {
-    fill: #CC2954;
+    fill: none;
     stroke: #CC2954;
     stroke-width: 0.5px;
     stroke-linejoin: round;
