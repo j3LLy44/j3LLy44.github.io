@@ -1,0 +1,51 @@
+body{
+    font-family: monospace;
+}
+
+table{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr{
+    border: 1px solid rgb(110, 110, 110)
+}
+
+td{
+    text-align: center;
+}
+
+td{
+    border-bottom: 1px solid rgb(110, 110, 110))
+}
+
+@media screen and (max-width: 600px) {
+
+    th{
+        display: none;
+    }
+
+    thead{
+        display: none;
+    }
+    
+    table{
+        width: 60%;
+    }
+
+    table tr{
+        display: block;
+        margin: 1em;
+    }
+
+    table td{
+        display: block;
+        text-align: right;
+    }
+
+    table td::before{
+        content: attr(data-label);
+        float: left;
+    }
+}
