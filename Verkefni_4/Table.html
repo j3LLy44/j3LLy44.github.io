@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablestyles.css">
+    <link rel="stylesheet" href="formstyles.css">
     <title>Document</title>
 </head>
 <body>
     <table>
-        <caption>Tafla</caption>
         <thead">
             <th>Nafn</th>
             <th>Sími</th>
@@ -41,5 +41,48 @@
             <td data-label="Búseta">Reykjavík</td>
         </tr>
     </table>
+
+    <div class="formContain">
+        <form action="">
+            <label for="name">Nafn:</label>
+            <input id="name" type="text" required> <br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="text" required> <br>
+
+            <label for="">kyn:</label> <br>
+            <label for="male">kk</label>
+            <input id="male" name="gender" type="radio" required> <br>
+            <label for="fmale">kvk</label>
+            <input id="female" name="gender" type="radio" required> <br>
+            <label for="other">annað</label>
+            <input id="other" name="gender" type="radio" required> <br> <br>
+            
+            <label for="">Gæludýr:</label> <br>
+            <label for="cat">köttur</label>
+            <input id="cat" type="checkbox"> <br>
+            <label for="dog">hundur</label>
+            <input id="dog" type="checkbox"> <br>
+            <label for="pterodactyl">pterodactyl</label>
+            <input id="pterodactyl" type="checkbox"> <br> <br>
+            
+            <label for="birthday">Fæðingardagur:</label>
+            <input id="birthday" type="date" required> <br> <br>
+
+            <label for="">uppáhalds litur:</label>
+            <select name="" id="" required>
+                <option value="">blue</option>
+                <option value="">green</option>
+                <option value="">red</option>
+                <option value="">all</option>
+            </select> <br> <br>
+            
+            <label for="">sími:</label>
+            <input type="textarea" required> <br> <br>
+
+            <input type="submit">
+
+        </form>
+    </div>
 </body>
 </html>

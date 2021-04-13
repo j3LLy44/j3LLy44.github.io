@@ -3,21 +3,19 @@ body{
 }
 
 table{
-    width: 50%;
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
 }
 
-table tr{
-    border: 1px solid rgb(110, 110, 110)
-}
-
-td{
+table td{
     text-align: center;
+    border: 1px solid rgb(110,110,110);
 }
 
-td{
-    border-bottom: 1px solid rgb(110, 110, 110))
+td:first-child{
 }
 
 @media screen and (max-width: 600px) {
@@ -42,10 +40,18 @@ td{
     table td{
         display: block;
         text-align: right;
+        border-bottom: none;
     }
 
     table td::before{
         content: attr(data-label);
         float: left;
+    }
+
+    td:last-child{
+        border-bottom: 1px solid rgb(110,110,110);
+    }
+
+    td:first-child{
     }
 }

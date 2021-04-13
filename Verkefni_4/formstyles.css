@@ -1,0 +1,23 @@
+.formContain{
+    width: 30%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+
+.bigLabel{
+    font-size: 18px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  
+  input[type=submit]:hover {
+    background-color: #3ca141;
+}
+
