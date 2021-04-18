@@ -1,0 +1,51 @@
+body{
+    font-family: monospace;
+    font-size: 20px;
+    color: blanchedalmond;
+    background-color: black;
+}
+
+a{
+    color: rgb(255, 225, 205);
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+.topCon{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rip{
+    display: block;
+
+    text-align: left;
+}
+
+.ripText{
+    text-decoration: none;
+}
+
+img{
+    height: 250px;
+}
+
+.hhg{
+    font-style: italic;
+    font-weight: bold;
+}
+
+nav{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+}
