@@ -1,0 +1,111 @@
+/* - Veljið ykkar Grid lausn: https://gridbyexample.com/examples/ */
+
+/* 6 dálka grid -  Mobile up 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1em;
+}
+.container {
+  padding:1em;
+}
+/* vinnurammi */
+.rammi {
+  margin: 1em 0;
+}
+.rammi div{
+  border: 1px dotted;
+  text-align: center;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than mobile */
+@media screen and (min-width: 30em) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media screen and (min-width: 37.5em) {
+  .col-2,
+  .col-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1em;
+  }
+  .col-3,
+  .col-5,
+  .col-6 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:1em;
+  }
+}
+
+/* Larger than mobile */
+@media screen and (min-width: 48em) {
+  .col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .col-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .col-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Larger than tablet */
+@media screen and (min-width: 60em) {
+  .container {
+    max-width: 60em;
+    margin: 1em auto;
+    padding: 0;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 80em) {
+  .container {
+    max-width: 80em;
+  }
+}
+
+/* fastir dálkar = .col-nf = fixed */
+.col-1f,
+.col-2f,
+.col-3f,
+.col-4f,
+.col-5f,
+.col-6f {
+  display: grid;
+  row-gap: 1em;
+}
+.col-1f {
+  grid-template-columns: 1fr;
+}
+.col-2f {
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-3f {
+  grid-template-columns: repeat(3, 1fr);
+}
+.col-4f {
+  grid-template-columns: repeat(4, 1fr);
+}
+.col-5f {
+  grid-template-columns: repeat(5, 1fr);
+}
+.col-6f {
+  grid-template-columns: repeat(6, 1fr);
+}
+@media screen and (min-width:48em) {
+  .col-2f, .col-3f, .col-4f, .col-5f, .col-6f {
+    grid-gap: 1em;
+  }
+}
