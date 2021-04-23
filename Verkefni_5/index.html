@@ -10,35 +10,47 @@
     <title>Document</title>
 </head>
 <body class="container">
-    <h1>Nafn Síðu</h1>
-    <h2>Tafla og Form:</h2>
+    <!-- <nav>
+        <input type="checkbox" id="toggle">
+        <label for="toggle">&#9776;</label>
+        <nav class="navigation">
+            <ul id="navList">
+                <li><a class="icon-menu" href="#">Home</a></li>
+                <li><a class=icon-flickr4 href="https://j3lly44.github.io/Verkefni_2/index.html">See</a></li>
+                <li><a class=icon-ello href="#">Smile</a></li>
+                <li><a class=icon-directions_run href="#">Run</a></l>
+            </ul>
+        </nav>
+    </nav> -->
+    <h1>Mechanical Keyboard Switches</h1>
+    <h2></h2>
     <section class="col-2">
         <div>
             <table>
                 <thead">
-                    <th>Litur/Nafn</th>
-                    <th>Tegund</th>
-                    <th>Kraftur</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Actuation force</th>
                 </thead>
                 <tr>
-                    <td data-label="litur/Nafn">Gateron Black Inks v2</td>
-                    <td data-label="Tegund">Linear</td>
-                    <td data-label="Kraftur">70g</td>
+                    <td data-label="Name">Gateron Black Inks v2</td>
+                    <td data-label="Type">Linear</td>
+                    <td data-label="Actuation Force">60g</td>
                 </tr>
                 <tr>
-                    <td data-label="litur/Nafn">Zealios v2</td>
-                    <td data-label="Tegund">Tactile</td> 
-                    <td data-label="Kraftur">62g</td>
+                    <td data-label="Name">Zealios v2</td>
+                    <td data-label="Type">Tactile</td> 
+                    <td data-label="Actuation Force">62 - 78g</td>
                 </tr>
                 <tr>
-                    <td data-label="litur/Nafn">Kailh Box Whites</td>
-                    <td data-label="Tegund">Clicky</td>
-                    <td data-label="Kraftur">55g</td>
+                    <td data-label="Name">Kailh Box Whites</td>
+                    <td data-label="Type">Clicky</td>
+                    <td data-label="Actuation Force">50g</td>
                 </tr>
                 <tr>
-                    <td data-label="litur/Nafn">Cherry MX Blues</td>
-                    <td data-label="Tegund">Clicky</td>
-                    <td data-label="Kraftur">64g</td>
+                    <td data-label="Name">Cherry MX Blues</td>
+                    <td data-label="Type">Clicky</td>
+                    <td data-label="Actuation Force">64g</td>
                 </tr>
             </table>
         </div>
@@ -48,19 +60,27 @@
                     <label for="name"><h3>Nafn:</h3></label>
                     <input id="name" type="text" required>
                     <label for="email"><h3>Email:</h3></label>
-                    <input id="email" type="email" required>
+                    <input id="email" type="email" required> <br>
+                    <input type="submit">
                 </div>
-               
-                <input type="submit">
             </form>
         </div>
     </section>
 
     <h2>Mekanískir rofar</h2>
     <section class="col-3">
-        <div>Linear</div>
-        <div>Tactile</div>
-        <div>Clicky</div>
+        <div class="center">
+            <img src="gif/red-switch.gif" alt="">
+            <h3>Linear</h3>
+        </div>
+        <div class="center">
+            <img src="gif/brown-switch.gif" alt="">
+            <h3>Tactile</h3>
+        </div>
+        <div class="center">
+            <img src="gif/blue-switch.gif" alt="">
+            <h3>Clicky</h3>
+        </div>
     </section>
 </body>
 </html>

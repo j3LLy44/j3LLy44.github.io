@@ -1,7 +1,76 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
 div{
-    border: 1px solid blue
+    border: 1px solid rgba(0, 0, 255, 0)
 }
 
 input{
-    background-color: rgb(170, 255, 217);;
+    background-color: rgb(255, 255, 255);
 }
+
+input[type=submit]{
+    margin-top: 10px;
+    align-self: center;
+}
+
+input[type=name],[type=email]{
+    padding: 6px, 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+/* nav input {
+    display: none;
+}
+
+nav {
+    max-height: 500;
+    overflow: hidden;
+    transition: all 0s ease;
+  }
+
+  input:checked ~ nav {
+    max-height: 500px;
+}
+
+ul {
+    list-style: none;
+    margin: 8px 0 0 0;
+    width: 100px;
+    padding-left: 0px;
+}
+@media screen and (min-width: 48em){
+    label{
+        display: none;
+    }
+    .navigation{
+        max-height: 500px;
+        align-content: center;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-flow: row;
+        border: 1px;
+        padding-inline-start: 0px;
+        padding-left: 0px;
+    }
+    .navigation li{
+        border-top: 1px solid #cecfd5;
+    }
+    .navigation li:first-child{
+        border-left: 1px solid #cecfd5;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px
+    }
+    .navigation li:last-child{
+        border-bottom: 1px solid #cecfd5;
+        border-right: 1px solid #cecfd5;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+} */

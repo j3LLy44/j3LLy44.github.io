@@ -140,7 +140,7 @@ html {
   textarea,
   select {
     height: 38px;
-    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    padding: 6px 50px; /* The 6px vertically centers text on FF, ignored by Webkit */
     background-color: rgb(170, 255, 217);
     border: 1px solid #d1d1d1;
     border-radius: 4px;
