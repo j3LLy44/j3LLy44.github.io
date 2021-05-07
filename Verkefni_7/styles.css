@@ -1,0 +1,40 @@
+body{
+    width: 50%;
+    margin: auto;
+    font-family: 'Rubik';
+}
+
+header{
+    height: 50px;
+    margin-top: 1em;
+}
+nav{
+    line-height: 50px;
+}
+
+nav:last-child{
+    margin-right: 0px;
+}
+
+div a{
+    margin-right: .5em;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    align-self: center;
+    vertical-align: baseline;
+}
+
+a:hover{
+    color:blue
+}
+
+.logo{
+    height: 45px
+}
+
+.centerInDiv{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
