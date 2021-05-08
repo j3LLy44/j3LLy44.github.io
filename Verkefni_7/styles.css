@@ -1,15 +1,13 @@
 body{
-    width: 50%;
-    margin: auto;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Rubik';
 }
 
 header{
     height: 50px;
     margin-top: 1em;
-}
-nav{
-    line-height: 50px;
 }
 
 nav:last-child{
@@ -25,6 +23,12 @@ div a{
     vertical-align: baseline;
 }
 
+.map{
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
 a:hover{
     color:blue
 }
@@ -37,4 +41,27 @@ a:hover{
     display:flex;
     justify-content:center;
     align-items:center;
+}
+
+.imgContainer{
+    margin-top: 1em;
+    width: 350px;
+    text-align: justify;
+}
+
+.imgContainer img{
+    width: 350px;
+    height: 350px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.textContainer{
+    margin-top: 80px;
+    width: 75%;
+    margin-top: 2em;
+    margin: 0 auto;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 10px;
 }
