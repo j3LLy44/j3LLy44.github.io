@@ -7,48 +7,71 @@
     <title>Document</title>
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tablestyles.css">
 </head>
 <body>
     <div style="background-color: #EAFFFD;">
         <header class="col-2 constrain">
             <div class="logo">
-                <a href="index.html"><img src="/Verkefni_7/Logo.svg" alt=""></a>
+                <a href="index.html"><img src="Logo.svg" alt=""></a>
             </div>
             <div class="center">
                 <input type="checkbox" id="takki">
-                <label for="takki">&#9776</label>
+                <label class="hamburger" for="takki">&#9776</label>
                 <nav>
                 <ul>
                     <li><a href="index.html">Home </a></li>
                     <li><a href="menu.html">Menu </a></li>
                     <li><a href="contact.html">Contact </a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">About</a></li>
                 </ul> 
                 </nav>
             </div>
         </header>
     </div>
 
-    <!--
-    <div class="topbar">
-        <div class="col-2 constrain">
-            <div class="center-logo">
-                <img src="/Verkefni_7/Logo.svg" alt="">
-            </div>
-            <div class="center">
-                <a href="">Home</a>
-                <a href="">Menu</a>
-                <a href="">Contact</a>
-                <a href="">About</a>
-            </div>
-        </div>
+    <div class="constrain top-padding">
+        <table>
+            <thead">
+                <th>Nafn:</th>
+                <th>Verð:</th>
+            </thead>
+            <tr>
+                <td data-label="Nafn:">Bragðarefur</td>
+                <td data-label="Verð:">7000kr</td>
+            </tr>
+            <tr>
+                <td data-label="Nafn:">Vöffluís</td>
+                <td data-label="Verð:">500kr</td>
+            </tr>
+            <tr>
+                <td data-label="Nafn:">Trúðaís</td>
+                <td data-label="Verð:">250kr</td>
+            </tr>
+            <tr>
+                <td data-label="Nafn:">Kúluís</td>
+                <td data-label="Verð:">200kr/kúlu</td>
+            </tr>
+            <tr>
+                <td data-label="Nafn:">íspinni</td>
+                <td data-label="Verð:">400kr</td>
+            </tr>
+            <tr>
+                <td data-label="Nafn:">Sorbet</td>
+                <td data-label="Verð:">250kr/kúlu</td>
+            </tr>
+            <tr>
+                <td data-label="Nafn:">Gamli ísinn</td>
+                <td data-label="Verð:">2000kr/líter</td>
+            </tr>
+        </table>
     </div>
-    -->
+
     <div class="bottombar topbar">
         <div class="col-2 constrain">
             <div class="center-logo">
-                <p>Email: iceis@iceis.is</p>
-                <p>Sími: 777-7777</p>
+                <h3>Email: iceis@iceis.is</p>
+                <h3>Sími: 777-7777</p>
             </div>
             <div class="center">
                 <a href="">Facebook</a>

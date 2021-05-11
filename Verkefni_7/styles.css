@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0 0 0 0;
     font-family: 'Rubik';
     background-color: #AAFFAC;
+    min-height: 400px;
+    margin-bottom: 200px;
 }
 /**************************************************************************/
 header{
@@ -15,20 +21,21 @@ header div img{
     width: 100px;
 }
 
-input{
+.dropdown{
     display: none;
 }
 
 nav{
     position: absolute;
     top: -130px;
-    width: 100vw;
-    opacity: 0.85;
+    right: 4em;
+    justify-content: center;
 }
 
 ul{
     margin:0;
     padding:0;
+    list-style-type: none;
 }
 
 ul li{    
@@ -59,6 +66,10 @@ label{
 img{
     width: 250px;
 }
+
+p{
+    font-size: 30px;
+}
 /**************************************************************************/
 .bottombar{
     position: fixed;
@@ -67,6 +78,13 @@ img{
     background-color: #EAFFFD;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.constrain{
+    width: 100%;
+    align-content: center   ;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo{
@@ -83,20 +101,42 @@ img{
 
 .imgContainer{
     margin-top: 1em;
+    padding: 0em 1.5em;
     display: inline-block;
     overflow: hidden;
 }
 
 .center-content{
-    display: grid;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    justify-content:flex-end;
-    align-content:center;
+}
+
+.formcontainer{
+    display: flex;
+}
+
+#takki{
+    display: none;
+}
+
+#message{
+    width: 100%;
+    padding: 8px 8px;
+}
+#email{
+    width: 45%;
+    padding: 8px 8px;
+}
+
+input[type=submit]{
+    height: 25px;
+    width: 100px;
 }
 
 /*  Taktu eftir hér nota ég min-width sem þýðir að css-ið hér fyrir ofan er fyrir smærri skjái en 600px og hér fyrir neðan fyrir stærri skjái en 599px.  */
 @media screen and (min-width:600px){
-    label{
+    .hamburger{
         display:none;
     }
 
@@ -116,13 +156,13 @@ img{
 
     ul li{
         display: inline-block;
-        border: 0;
         padding: 5px 15px 5px 15px;
     }
 
     .constrain{
         width: 50%;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .center{
@@ -130,8 +170,6 @@ img{
         justify-content:flex-end;
         align-items:center;
     }
-
-    
 
     .logo{
         padding-left: none;
