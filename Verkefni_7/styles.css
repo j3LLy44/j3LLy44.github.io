@@ -1,9 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 body{
     margin: 0 0 0 0;
     font-family: 'Rubik';
     background-color: #AAFFAC;
 }
+/**************************************************************************/
+header{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
+header div img{
+    width: 100px;
+}
+
+input{
+    display: none;
+}
+
+nav{
+    position: absolute;
+    top: -130px;
+    width: 100vw;
+    opacity: 0.85;
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+ul li{    
+    border: 0.5px solid;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    color: blue;
+}
+
+input:checked ~ nav{
+    top: 30px;
+}
+/**************************************************************************/
+/*
 div div img{
     width: 100px;
 }
@@ -29,7 +79,7 @@ div div a:hover{
     padding-top: 1em;
     padding-bottom: 1em;
 }
-
+*/
 .bottombar{
     position: fixed;
     bottom: 0;
@@ -39,22 +89,44 @@ div div a:hover{
     padding-bottom: 1em;
 }
 
-.constrain{
-    width: 50%;
-    margin: 0 auto;
-}
+/*  Taktu eftir hér nota ég min-width sem þýðir að css-ið hér fyrir ofan er fyrir smærri skjái en 600px og hér fyrir neðan fyrir stærri skjái en 599px.  */
+@media screen and (min-width:600px){
+    label{
+        display:none;
+    }
 
-.center{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-}
+    nav{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;        
+    }
 
-.center-logo{
-    display:flex;
-    align-items:center;
-}
+    input:checked ~ nav{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 
+    ul li{
+        display: inline-block;
+        border: 0;
+        padding: 5px 15px 5px 15px;
+    }
+
+    .constrain{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .center{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+    }
+}
+/* 
 @media screen and (max-width: 600px){
     .constrain{
         width: 100%;
@@ -70,3 +142,4 @@ div div a:hover{
         align-items:center;
     }
 }
+*/

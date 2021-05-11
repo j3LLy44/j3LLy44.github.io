@@ -1,0 +1,75 @@
+body{
+    margin: 0 0 0 0;
+    font-family: 'Rubik';
+    background-color: #AAFFAC;
+}
+
+div div img{
+    width: 100px;
+}
+
+div div a{
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    padding-right: 1em;
+}
+
+div div a:hover{
+    color: blue;
+}
+
+div div p{
+     padding-right: 1em;
+}
+
+.topbar{
+    position: fixed;
+    background-color: #EAFFFD;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.bottombar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #EAFFFD;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.constrain{
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.center{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.center-logo{
+    display:flex;
+    align-items:center;
+}
+
+@media screen and (max-width: 600px){
+    .constrain{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .center-logo{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .center{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+}
