@@ -4,7 +4,7 @@ html{
     scroll-behavior: smooth;
 }
 
-body{€ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+body{
     margin: 0 0 0 0;
     font-family: 'Rubik';
     background-color: #AAFFAC;
@@ -65,26 +65,28 @@ label{
     padding-left: 2em;
 }
 
-img{
-    width: 250px;
-}
-
 p{
-    font-size: 30px;
+    font-size: 18px;
 }
 /**************************************************************************/
 .bottombar{
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
     background-color: #EAFFFD;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
+.bottomfont{
+    justify-content: center;
+    font-size: 14px;
+}
+
 .constrain{
     width: 100%;
-    align-content: center   ;
+    align-content: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -103,7 +105,7 @@ p{
 
 .imgContainer{
     margin-top: 1em;
-    padding: 0em 1.5em;
+    padding: 0em .5em;
     display: inline-block;
     overflow: hidden;
 }
@@ -136,8 +138,21 @@ input[type=submit]{
     width: 100px;
 }
 
+img{
+    width: 250px;
+}
+
+.centergrid{
+    display: grid;
+    justify-content: center;
+}
+
 /*  Taktu eftir hér nota ég min-width sem þýðir að css-ið hér fyrir ofan er fyrir smærri skjái en 600px og hér fyrir neðan fyrir stærri skjái en 599px.  */
 @media screen and (min-width:600px){
+    img{
+        width: 100%;
+    }
+
     .hamburger{
         display:none;
     }
@@ -181,5 +196,9 @@ input[type=submit]{
         margin-top: 1em;
         display: inline-block;
         overflow: hidden;
+    }
+
+    .bottomfont{
+        font-size: 14px;
     }
 }
